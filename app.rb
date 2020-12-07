@@ -19,4 +19,10 @@ get '/named-dog' do
   erb(:index)
 end
 
+post '/dog-form' do
+  p params
+  @names = params[:name]
+  erb(:index)
+end
+
 set :session_secret, "Super secret"
