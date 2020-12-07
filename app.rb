@@ -8,7 +8,7 @@ get '/secret' do
   "Whoop whoop"
 end
 
-get '/cat' do
+get '/dog' do
   erb(:index)
 end
 
