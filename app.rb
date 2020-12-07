@@ -8,8 +8,14 @@ get '/secret' do
   "Whoop whoop"
 end
 
-get '/dog' do
+get '/random-dog' do
   @names = ["Amingo", "Oscar", "Viking"].sample
+  erb(:index)
+end
+
+get '/named-dog' do
+  p params
+  @names = params[:name]
   erb(:index)
 end
 
